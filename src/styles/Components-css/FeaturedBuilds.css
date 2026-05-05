@@ -1,0 +1,114 @@
+.featured-builds {
+    background: #0b0f16;
+    padding: 72px 18px 76px;
+}
+
+.featured-builds__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 46px;
+    color: #ffffff;
+}
+
+.featured-builds__grid {
+    width: min(980px, 100%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.featured-build-card {
+    overflow: hidden;
+    border-radius: 9px;
+    background: #171b24;
+    border: 1px solid rgba(52, 60, 76, 0.85);
+}
+
+.featured-build-card__visual {
+    height: 185px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(180deg, #252a34, #1b2029);
+}
+
+.featured-build-card__icon {
+    width: 62px;
+    height: 62px;
+}
+
+.featured-build-card__icon--red {
+    color: #069494;
+}
+
+.featured-build-card__icon--cyan {
+    color: #00FF7F;
+}
+
+.featured-build-card__body {
+    padding: 22px 22px 24px;
+}
+
+.featured-build-card h3 {
+    font-size: 17px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.featured-build-card p {
+    color: #9da6b5;
+    font-size: 13px;
+    line-height: 1.5;
+    min-height: 40px;
+    margin-bottom: 16px;
+}
+
+.featured-build-card__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.featured-build-card__meta strong {
+    color: #00FF7F;
+    font-size: 24px;
+}
+
+.featured-build-card__meta span {
+    color: #9da6b5;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.featured-build-card__bar {
+    height: 5px;
+    border-radius: 999px;
+    background: #2c323d;
+    overflow: hidden;
+}
+
+.featured-build-card__bar i {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #069494, #00FF7F);
+}
+
+@media (max-width: 980px) {
+    .featured-builds__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .featured-builds {
+        padding: 52px 14px 80px;
+    }
+
+    .featured-builds__grid {
+        grid-template-columns: 1fr;
+    }
+}

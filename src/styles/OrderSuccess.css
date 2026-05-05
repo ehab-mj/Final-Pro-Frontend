@@ -1,0 +1,69 @@
+.order-success-page {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at center, rgba(0, 219, 128, 0.14), transparent 34%),
+        linear-gradient(180deg, #080b11, #0b0f16);
+    display: grid;
+    place-items: center;
+    color: #ffffff;
+    padding: 30px 16px;
+}
+
+.order-success-card {
+    width: min(480px, 100%);
+    background: #171b24;
+    border: 1px solid rgba(0, 219, 128, 0.35);
+    border-radius: 14px;
+    padding: 42px 28px;
+    text-align: center;
+}
+
+.order-success-icon {
+    width: 82px;
+    height: 82px;
+    color: #00db80;
+    margin-bottom: 22px;
+}
+
+.order-success-card h1 {
+    font-size: 30px;
+    margin-bottom: 14px;
+}
+
+.order-success-card p {
+    color: #a3adbb;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.order-success-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.success-btn {
+    height: 42px;
+    border-radius: 7px;
+    padding: 0 18px;
+    display: inline-grid;
+    place-items: center;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.success-btn--primary {
+    background: #00b96b;
+    color: #ffffff;
+}
+
+.success-btn--secondary {
+    background: #303540;
+    color: #ffffff;
+}
+
+@media (max-width: 520px) {
+    .order-success-actions {
+        flex-direction: column;
+    }
+}
