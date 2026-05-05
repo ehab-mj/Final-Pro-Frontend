@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { ChevronRight } from 'lucide-react';
-import { parts } from '../data/builderParts';
+import { parts } from '../data/BuilderParts';
 import { checkCompat } from '../utils/checkCompat';
 import '../styles/Builder.css';
 import { getProducts } from '../api/product-Api';
