@@ -1,13 +1,7 @@
 import axios from 'axios';
 
-const apiBaseUrl =
-    import.meta.env.VITE_API_BASE_URL ||
-    (typeof window !== 'undefined' && window.location.hostname === 'localhost'
-        ? 'http://localhost:4000/api'
-        : 'https://final-pro-backend-production.up.railway.app/api');
-
 const API = axios.create({
-    baseURL: apiBaseUrl,
+    baseURL: 'http://localhost:4000/api',
 });
 
 export const registerUser = async (formData) => {
